@@ -1,0 +1,233 @@
+/*********************/
+/** General Styling **/
+/*********************/
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  background-color: #f6e7d8;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+}
+
+header {
+  height: 220px;
+  background-color: #fff;
+  background: linear-gradient(90deg, #f6e7d8 0%, #f68989 30%, #f6e7d8 100%);
+  position: fixed;
+}
+
+.masthead {
+  background-image: url("../images/gummybearbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 25vh;
+  padding-top: 200px;
+}
+
+.masthead>div {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.masthead div h1 {
+  font-size: 52px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0px auto;
+}
+
+.masthead div h2 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px auto;
+}
+
+.ex-one {
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+  width: 100%;
+  height: 125px;
+  background-color: black;
+  text-shadow: 2px 2px 2px #874356;
+  font-size: 23px;
+}
+
+.ex-one div {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.ex-one div a img {
+  padding: 10px;
+  height: 80%;
+  clip-path: circle(40%);
+}
+
+.ex-one nav {
+  padding: 0px 10px;
+}
+
+.ex-one nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.ex-one nav ul li {
+  padding: 30px;
+}
+
+.ex-one nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ex-one .dropdown {
+  transition: all 0.25s linear;
+}
+
+.ex-one .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c65d7b;
+  min-width: 200px;
+  min-height: 150px;
+  box-shadow: 1px 8px 16px 1px grey;
+  z-index: 1;
+}
+
+.ex-one .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.ex-one .dropdown:hover .dropdown-content {
+  display: block;
+  position: flex;
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+}
+
+.ex-one .dropdown .dropdown-content a:hover {
+  display: block;
+  background-color: #874356;
+}
+
+.ex-one input[type="search"] {
+  font-size: 21px;
+  margin: auto 20px;
+  height: 45px;
+  width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-width: 8px;
+  border-color: #f68989;
+  width: 5%;
+}
+
+section {
+  text-align: justify;
+  padding: 25px 200px;
+  font-size: 23px;
+}
+
+section h3 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: #874356;
+}
+h2 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: #874356;
+  font-size: 34px;
+}
+.contact-me h3{
+
+  font-size: 23px;
+}
+.contact-me p{
+
+    font-size: 21px;
+}
+.bear-left {
+  border-radius: 15px;
+  float: left;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  width: 15%;
+}
+
+.bear-right {
+  border-radius: 15px;
+  float: right;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 15%;
+}
+.btn {
+  background: #874356;
+  background-image: -webkit-linear-gradient(top, #c65d7b, #f68989);
+  background-image: -moz-linear-gradient(top, #c65d7b, #f68989);
+  background-image: -ms-linear-gradient(top, #c65d7b, #f68989);
+  background-image: -o-linear-gradient(top, #c65d7b, #f68989);
+  background-image: linear-gradient(to bottom, #c65d7b, #f68989);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #874356;
+  background-image: -webkit-linear-gradient(top, #874356, #c65d7b);
+  background-image: -moz-linear-gradient(top, #874356, #c65d7b);
+  background-image: -ms-linear-gradient(top, #874356, #c65d7b);
+  background-image: -o-linear-gradient(top, #874356, #c65d7b);
+  background-image: linear-gradient(to bottom, #874356, #c65d7b);
+  text-decoration: none;
+}
+
+.contact-me {
+  line-height: 2;
+  margin: 70px auto 70px auto;
+  width: 50%;
+  text-align: center;
+}
+.agree {
+  margin-bottom: 50px;
+}
+footer {
+  background: linear-gradient(90deg, #f6e7d8 0%, #f68989 30%, #f6e7d8 100%);;
+  height: 150px;
+  line-height: 2;
+  padding-top: 50px;
+}
+footer p{
+  font-size: 21px;
+  text-align: center;
+  padding-top: 50px;
+}
